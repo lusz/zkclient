@@ -82,7 +82,7 @@ public final class ContentWatcher<T extends Object> implements IZkDataListener {
     public void handleDataDeleted(String dataPath) {
         // ignore
     }
-
+    
     public T getContent() throws InterruptedException {
         _contentLock.lock();
         try {
@@ -95,8 +95,3 @@ public final class ContentWatcher<T extends Object> implements IZkDataListener {
         }
     }
 }
-
-
-
-
-
